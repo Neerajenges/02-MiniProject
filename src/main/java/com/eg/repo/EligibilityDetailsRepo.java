@@ -12,7 +12,7 @@ public interface EligibilityDetailsRepo extends JpaRepository<EligibilityDetails
 	@Query("select distinct(planName) from EligibilityDetails")
 	public List<String> findPlanNames();
 	//we are recommended to write query in Repository interface
-	@Query("select distinct(planName) from EligibilityDetails")
+	@Query("select distinct(planStatus) from EligibilityDetails")
 	public List<String> findPlanStatuses();
 
 }
