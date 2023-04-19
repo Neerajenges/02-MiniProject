@@ -18,11 +18,11 @@ public class AppRunner implements ApplicationRunner{
 		 EligibilityDetails entity1=new EligibilityDetails();
 		 entity1.setEligId(1);
 		 entity1.setName("Neeraj");
-		 entity1.setMobile(123456789l);
+		 entity1.setMobile(1234569l);
 		 entity1.setPlanStatus("Approved");
 		 entity1.setPlanName("SNAP");
 		 entity1.setGender('M');
-		 entity1.setSsn(7876876123l);
+		 entity1.setSsn(787687613l);
 		 repo.save(entity1);
 		 
 		 EligibilityDetails entity2=new EligibilityDetails();

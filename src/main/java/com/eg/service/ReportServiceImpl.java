@@ -61,7 +61,7 @@ public class ReportServiceImpl implements ReportService {
 			queryBuilder.setPlanName(planName);
 		}
 		String planStatus=request.getPlanStatus();
-		if(planStatus!=null && !planStatus.equals(planStatus)) {
+		if(planStatus!=null && !planStatus.equals("")) {
 			queryBuilder.setPlanStatus(planStatus);
 		}
 		LocalDate planStartDate =request.getPlanStartDate();
@@ -141,7 +141,7 @@ public class ReportServiceImpl implements ReportService {
         cell.setBackgroundColor(Color.BLUE);
         cell.setPadding(5);
          
-        //Font font = FontFactory.getFont(FontFactory.HELVETICA);
+        font = FontFactory.getFont(FontFactory.HELVETICA);
         font.setColor(Color.WHITE);
          
         cell.setPhrase(new Phrase("Name", font));
